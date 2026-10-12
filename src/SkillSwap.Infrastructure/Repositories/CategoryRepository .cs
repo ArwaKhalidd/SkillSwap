@@ -1,6 +1,10 @@
-﻿using SkillSwap.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using SkillSwap.Application.Abstractions;
+using SkillSwap.Domain.Entities;
+using SkillSwap.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SkillSwap.Infrastructure.Repositories
@@ -35,5 +39,4 @@ namespace SkillSwap.Infrastructure.Repositories
                     cancellationToken);
         }
     }
-
 }

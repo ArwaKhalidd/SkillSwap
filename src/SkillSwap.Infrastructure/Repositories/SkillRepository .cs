@@ -1,11 +1,15 @@
-﻿using SkillSwap.Infrastructure.Persistence;
+using Microsoft.EntityFrameworkCore;
+using SkillSwap.Application.Abstractions;
+using SkillSwap.Domain.Entities;
+using SkillSwap.Infrastructure.Persistence;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace SkillSwap.Infrastructure.Repositories
 {
-    public class SkillRepository: ISkillRepository
+    public class SkillRepository : ISkillRepository
     {
         private readonly ApplicationDbContext _context;
 
@@ -105,5 +109,4 @@ namespace SkillSwap.Infrastructure.Repositories
             await _context.Skills.AddAsync(skill, cancellationToken);
         }
     }
-
 }

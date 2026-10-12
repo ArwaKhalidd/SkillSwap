@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -87,6 +87,15 @@ public static class DependencyInjection
         services.AddScoped<ISessionService, SessionService>();
         services.AddScoped<ISessionCompletionService, SessionCompletionService>();
         services.AddScoped<ILedgerReconciliationService, LedgerReconciliationService>();
+
+        // ── Platform Features (Member 5) ────────────────────────────────────
+        services.AddScoped<IReviewService, ReviewService>();
+        services.AddScoped<INotificationService, NotificationService>();
+        services.AddScoped<IBadgeService, BadgeService>();
+        services.AddScoped<IFavoriteService, FavoriteService>();
+        services.AddScoped<IBlockService, BlockService>();
+        services.AddScoped<IReportService, ReportService>();
+        services.AddScoped<ISubscriptionService, SubscriptionService>();
 
         // ── Background Jobs ─────────────────────────────────────────────────
         services.AddHostedService<SessionAutoCompletionBackgroundService>();

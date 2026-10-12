@@ -1,17 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using SkillSwap.Domain.Entities;
 
 namespace SkillSwap.Application.Abstractions
 {
     public interface ISkillRepository
     {
         Task<IReadOnlyList<Skill>> SearchActiveAsync(
-        string? searchTerm,
-        int? categoryId,
-        int skip,
-        int take,
-        CancellationToken cancellationToken = default);
+            string? searchTerm,
+            int? categoryId,
+            int skip,
+            int take,
+            CancellationToken cancellationToken = default);
 
         Task<int> CountActiveAsync(
             string? searchTerm,

@@ -1,13 +1,14 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using SkillSwap.Domain.Entities;
 
 namespace SkillSwap.Application.Abstractions
 {
     public interface ICategoryRepository
     {
         Task<IReadOnlyList<Category>> GetActiveAsync(
-       CancellationToken cancellationToken = default);
+            CancellationToken cancellationToken = default);
 
         Task<Category?> GetActiveByIdAsync(
             int id,
