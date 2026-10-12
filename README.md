@@ -188,3 +188,10 @@ Endpoints will be available at:
 - **Module:** Session and Wallet / Financial Engine
 - **Branch:** [feature/session-wallet](https://github.com/islamkhaled1/SkillSwap/tree/feature/session-wallet)
 - **Publication Status:** Uploaded to GitHub on 2026-10-12 (commit 526f6f9). Not yet merged into develop.
+
+### Member 5 - Reviews, Notifications, Badges, Favorites, Blocks, Reports, Subscriptions
+- **Name:** Arwa Khalid
+- **GitHub:** [@ArwaKhalidd](https://github.com/ArwaKhalidd)
+- **Member Code:** /113
+- **Module:** Reviews, Notifications, Badges, Favorites, Blocks, Reports, Subscriptions
+- **Publication Status:** pushed to GitHub on 2026-10-12 (commit 39940a3) into develop.
