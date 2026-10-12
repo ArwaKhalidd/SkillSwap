@@ -8,10 +8,10 @@
     <RootNamespace>SkillSwap.Infrastructure</RootNamespace>
     <AssemblyName>SkillSwap.Infrastructure</AssemblyName>
   </PropertyGroup>
-//
+
   <!-- Required to access ASP.NET Core Identity APIs (AddIdentity, etc.) from a class library -->
   <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" /> 
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
