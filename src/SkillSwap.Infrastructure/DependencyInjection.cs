@@ -69,6 +69,8 @@ public static class DependencyInjection
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         services.AddScoped<IJwtTokenService, JwtTokenService>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddScoped<IAuthService, AuthService>();
+
 
         // ── Locking, Wallet, Quota, Booking & Session Engine ────────────────
         services.AddScoped<IWalletLockService, SqlWalletLockService>();
