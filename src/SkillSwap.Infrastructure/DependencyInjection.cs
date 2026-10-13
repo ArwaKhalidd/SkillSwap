@@ -70,6 +70,8 @@ public static class DependencyInjection
         services.AddScoped<ICurrentUserService, CurrentUserService>();
         services.AddScoped<IJwtTokenService, JwtTokenService>();
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+        services.AddScoped<IAuthService, AuthService>();
+
 
         services.AddScoped<ICategoryRepository, CategoryRepository>();
         services.AddScoped<ISkillRepository, SkillRepository>();
