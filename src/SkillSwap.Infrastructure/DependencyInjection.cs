@@ -98,6 +98,7 @@ public static class DependencyInjection
         services.AddScoped<IBlockService, BlockService>();
         services.AddScoped<IReportService, ReportService>();
         services.AddScoped<ISubscriptionService, SubscriptionService>();
+        services.AddScoped<IConversationService, ConversationService>();
 
         // ── Background Jobs ─────────────────────────────────────────────────
         services.AddHostedService<SessionAutoCompletionBackgroundService>();
