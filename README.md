@@ -192,6 +192,6 @@ Endpoints will be available at:
 ### Member 5 - Reviews, Notifications, Badges, Favorites, Blocks, Reports, Subscriptions
 - **Name:** Arwa Khalid
 - **GitHub:** [@ArwaKhalidd](https://github.com/ArwaKhalidd)
-- **Member Code:** /113
+- **Member Code:** 113
 - **Module:** Reviews, Notifications, Badges, Favorites, Blocks, Reports, Subscriptions
 - **Publication Status:** pushed to GitHub on 2026-10-12 (commit 39940a3) into develop.
